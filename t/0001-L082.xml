@@ -1,0 +1,17 @@
+<diff xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+	<replace sel="/language[@id='82']/page[@id='1016']/t[@id='30']">
+		<t id="30">\033#FFFF0000# $LOCATION$의 $KILLED$ 파괴됨.\033X</t>
+	</replace>
+	<replace sel="/language[@id='82']/page[@id='1016']/t[@id='31']">
+		<t id="31">\033#FFFF0000# $KILLER$에 의해 $LOCATION$의 $KILLED$ 파괴됨.\033X</t>
+	</replace>
+	<replace sel="/language[@id='82']/page[@id='1016']/t[@id='32']">
+		<t id="32">\033#FFFF5733# $SHIP$이\(가\) $ORIGIN$에서 공격당하여 탈출하였습니다. 함선은 현재 $SPACE$의 $LOCATION$에 있습니다. \033X</t>
+	</replace>
+	<replace sel="/language[@id='82']/page[@id='1016']/t[@id='33']">
+		<t id="33">\033#FFFF5733# $SHIP$이\(가\) $ORIGIN$에서 $ATTACKER$에게 공격당하여 탈출하였습니다. 함선은 현재 $SPACE$의 $LOCATION$에 있습니다. \033X</t>
+	</replace>
+</diff>
+
+
+<!--<t id="20">$SHIP$ in $SECTOR$ was scanned and forced to drop all illegal cargo.</t> -->

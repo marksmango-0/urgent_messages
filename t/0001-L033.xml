@@ -1,0 +1,14 @@
+<diff xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+	<replace sel="/language[@id='33']/page[@id='1016']/t[@id='30']">
+		<t id="30">\033#FFFF0000# $KILLED$ $LOCATION$(reference to ID 1 or 2) a été détruit. \033X</t>
+	</replace>
+	<replace sel="/language[@id='33']/page[@id='1016']/t[@id='31']">
+		<t id="31">\033#FFFF0000# $KILLED$ $LOCATION$(reference to ID 1 or 2) a été détruit par $KILLER$. \033X</t>
+	</replace>
+	<replace sel="/language[@id='33']/page[@id='1016']/t[@id='32']">
+		<t id="32">\033#FFFF5733# $SHIP$ a été forcé de fuir après avoir été attaqué dans $ORIGIN$. Votre vaisseau est à $LOCATION$ dans $SPACE$. \033X</t>
+	</replace>
+	<replace sel="/language[@id='33']/page[@id='1016']/t[@id='33']">
+		<t id="33">\033#FFFF5733# $SHIP$ a été forcé de fuir après avoir été attaqué dans $ORIGIN$ par $ATTACKER$. Votre vaisseau est à $LOCATION$ dans $SPACE$. \033X</t>
+	</replace>
+</diff>
