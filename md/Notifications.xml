@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <diff>
-	<replace sel="/mdscript/cues/cue/cues/cue[@name='PlayerOwnedAttacked']/actions/write_to_logbook">
-		<write_to_logbook category="upkeep" title="'\033#FFFF5733#' + event.object.name + (' ' + {10002,310} + '\n' + {1001,2943} + {1001,120} + ' ') + event.object.sector.name" interaction="showonmap" object="event.object"/>
+	<replace sel="//cue[@name='PlayerOwnedAttacked']/actions/write_to_logbook">
+		<write_to_logbook category="upkeep" title="'\033#FFFF5733#' + event.object.name + (' ' + {10002,310} + '\n' + {1001,2943} + {1001,120} + ' ') + event.object.sector.name+'\033X'" interaction="showonmap" object="event.object"/>
 	</replace>
-	<replace sel="/mdscript/cues/cue/cues/cue[@name='PlayerOwnedKilled']/actions/write_to_logbook">
-		<write_to_logbook category="upkeep" title="''\033#FFFF0000#'+$text" interaction="showonmap" object="if event.param.sector and not @event.param.zone.isnormalzone then event.param.sector else event.param.zone"/>
+	<replace sel="//cue[@name='PlayerOwnedKilled']/actions/write_to_logbook">
+		<write_to_logbook category="upkeep" title="'\033#FFFF0000#'+$text+'\033X'" interaction="showonmap" object="if event.param.sector and not @event.param.zone.isnormalzone then event.param.sector else event.param.zone"/>
 	</replace>
-	<replace sel="/mdscript/cues/cue/cues/cue[@name='IllegalCargoDropped']/actions/write_to_logbook">
-		<write_to_logbook category="squad" title="'\033#FFFF5733#' + $logtext" interaction="showonmap" object="$actor.ship"/>
+	<replace sel="//cue[@name='IllegalCargoDropped_SpeakFinished']/actions/write_to_logbook">
+		<write_to_logbook category="squad" title="'\033#FFFF5733#' + $logtext+ '\033X'" interaction="showonmap" object="$actor.ship"/>
 	</replace>
-	<add sel="/mdscript/cues/cue/cues/cue[@name='MissileIncoming']/actions/">
-		<show_notification text="'\033#FFFF0000#INCOMING MISSILE'" timeout="10s" priority="1" comment="INCOMING MISSILE"/>
+	<add sel="//cue[@name='MissileIncoming']/actions">
+		<show_notification text="'\033#FFFF0000#INCOMING MISSILE\033X'" timeout="10s" priority="1" comment="INCOMING MISSILE"/>
 	</add>
 </diff>
